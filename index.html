@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Business Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #c8c2c2, #dbeafe);
+            background-color: #a39a9a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5%0vh;
+        }
+
+        .card {
+            background-color: #f7f1f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(30, 30, 30, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 2px solid #938b8b;
+            display: block;
+            margin: 20px auto 1rem auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: contain;
+            background-color: rgb(245, 95, 95);
+        }
+
+        .profile-pic {
+            max-width: 100%;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0.5rem;
+            text-decoration: none;
+            color: #2563ed;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .contact-links a:hover {
+            color: #0056b3;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 90%;
+            }
+
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="WhatsApp Image 2025-06-14 at 10.12.52_f75bcba8.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Vijay Bairwa</h1>
+        <h3>Computer Science Student</h3>
+        <div class="contact-links">
+            <a href="vijaydhawan593@gmail.com">Email</a>
+            <a href="+917733801940">Phone</a>
+            <a
+                href="https://www.linkedin.com/in/vijay-bairwa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedln</a>
+            <a href="https://github.com/vijaydhawan">Github</a>
+        </div>
+    </div>
+</body>
+
+</html>
